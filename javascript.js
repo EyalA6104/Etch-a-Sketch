@@ -4,7 +4,12 @@ function getSquares() {
         const square = document.createElement("div")
         square.classList.add("grid-square")
         container.appendChild(square)
+
+        square.addEventListener("mouseenter", () => {
+            square.style["background-color"] = "black";
+        });
     };
 };
 
 getSquares()
+
